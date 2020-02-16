@@ -10,6 +10,7 @@ describe Bookmark do
       Bookmark.add("http://www.makersacademy.com", "Makers Academy")
       Bookmark.add("http://www.google.com", "Google")
       bookmarks = Bookmark.all
+      p bookmarks
       expect(bookmarks.to_s).to include "Makers Academy"
       expect(bookmarks.to_s).to include "Google"
       # expect(bookmarks).to include "bookmark 3"
